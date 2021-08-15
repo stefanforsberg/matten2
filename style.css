@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: auto;
+    max-width: 1024px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pad {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+button {
+    font-size: 16vw;
+    width: 80%;
+    padding: 1vh 0;
+    border-radius: 10px;
+    background-color: #CCF1FF;
+    border: solid 2px #7b959e;
+    color: #384448;
+}
