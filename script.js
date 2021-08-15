@@ -12,6 +12,8 @@ ready(() => {
 
     this.answer = [];
 
+    this.yesSymbols = ["😘","👏","💖","😋","✌️"]
+
     Array.from(document.getElementsByTagName("button")).forEach((element) => {
         element.addEventListener('click', (clicked) => {
             this.answer.push(element.dataset.number);
@@ -47,7 +49,7 @@ ready(() => {
     }
 
     function yes() {
-        resultElement.innerText = "😘"
+        resultElement.innerText = this.yesSymbols[Math.floor(Math.random() * this.yesSymbols.length)];
         setTimeout(() => thinking(true), 1000);
         
     }
